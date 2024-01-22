@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("assets/istockphoto-1328689113-612x612.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+div.title {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 280%;
+  color: #120566;
+  margin-top: 50px;
+}
+
+input {
+  width: 200px;
+  height: 30px;
+  border-radius: 10px;
+  border-style: none;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#btn {
+  border-style: inherit;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+
+div#forecastContainer div {
+  width: 15%;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+#forecastContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+p {
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  border-color: #323535;
+  background-color: white;
+  font-family: "Montserrat Alternates", sans-serif;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgba(50, 47, 104, 0.2274509804);
+  color: #ffffff;
+}
+
+div#forecastContainer div img {
+  height: 200px;
+}
+
+img {
+  height: 300px;
+  border-radius: 20px;
+}
+
+div.titleblock img#image {
+  margin-top: 70px;
+}
+
+#suggestionContainer {
+  width: 200px;
+  max-height: 150px;
+  background-color: #fff;
+  border-top: none;
+}
+
+.city-suggestion {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.city-suggestion:hover {
+  background-color: #f0f0f0;
+}
+
+div.titleblock {
+  width: 80%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+
+.title {
+  margin: 40px;
+  display: flex;
+}
+
+@media screen and (max-width: 370px) {
+  body {
+    background-size: cover;
+  }
+  h1 {
+    text-align: center;
+  }
+  div.titleblock {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  div#forecastContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 400px;
+    padding-bottom: 10px;
+    height: 300px;
+    align-items: center; /* Ajoutez cette ligne */
+  }
+  div#forecastContainer div {
+    width: 80%;
+    height: 300px;
+    text-align: center;
+    justify-content: space-around;
+  }
+  img#image {
+    border-radius: 0;
+    margin-top: 5px;
+    height: auto;
+    width: 100%;
+  }
+  p {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    margin: 300px;
+  }
+}/*# sourceMappingURL=style.css.map */

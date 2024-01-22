@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weather-app</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="titleblock">
+      <div id="entete" class="title">
+        <h1>Weather Forecast</h1>
+        <input list="dataList" type="text" id="cityInput" placeholder="city" />
+        <datalist id="dataList"></datalist>
+        <div id="suggestionContainer"></div>
+        <button id="btn">Search</button>
+      </div>
+      <img id="image" />
+    </div>
+    <div id="forecastContainer"></div>
+
+    <script type="module" src="script.js"></script>
+    <script type="module" src="cityPicture.js"></script>
+    <script type="module" src="listeDeroulante.js"></script>
+    <script type="module" src="localeStorage.js"></script>
+  </body>
+</html>
